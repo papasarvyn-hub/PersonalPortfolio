@@ -111,6 +111,7 @@ img:hover {
         margin-left: 0;
         width: 30%;
         height: 50%;
+        scale: 0.7;
     }
 }
 @media (max-width:375px) {
@@ -126,3 +127,4 @@ img:hover {
     }
 
 }
+
