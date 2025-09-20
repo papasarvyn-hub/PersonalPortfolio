@@ -115,7 +115,7 @@ img:hover {
 }
 @media (max-width:375px) {
     .aboutMeHeader h1{
-        font-size: 35px;
+        font-size: 30px;
     }
     .aboutMeText p {
         font-size: 15px;
@@ -126,3 +126,4 @@ img:hover {
     }
 
 }
+
