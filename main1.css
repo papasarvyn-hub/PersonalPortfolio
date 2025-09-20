@@ -49,8 +49,8 @@ iframe.homepg {
 }
 iframe {
     border-radius: 30px;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
 }
 input[type="radio"]:checked + label + .content {
     display: flex;
@@ -138,4 +138,5 @@ ul {
     .main label {
         display: none;
     }
+
 }
