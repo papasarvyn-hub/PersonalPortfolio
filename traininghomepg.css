@@ -1,0 +1,116 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #F1EFEC;
+}
+.homepgcontent {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    font-family: roboto;
+    transition: 1s;
+}
+.box2 {
+    display: flex;
+    width: 70%;
+    height: 50%;
+    margin-top: 2%;
+    margin-right: 15%;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    width: 70%;
+    height: 100%;
+    box-shadow: 2px 2px 40px 20px grey;
+    animation-name: picMove;
+    animation-duration: 2s;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    margin-top: 8%;
+    margin-left: 20%;
+    font-size: 20px;
+}
+.box1 h2, .box1 h1, .box1 p, button {
+    animation-name: textMove;
+    animation-duration: 1s;
+}
+@keyframes textMove {
+    from{transform: translateX(-40px);}
+    to{transform: translateX(0);}
+}
+@keyframes picMove {
+    from{transform: translateX(40px);}
+    to{transform: translateX(0);}
+}
+a {
+    text-decoration: none;
+}
+button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 300px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #00809D;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width:1000px) {
+    .homepgcontent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        margin-left: 50%;
+        width: 100%;
+        height: 100%;
+    }
+    .box1 {
+        top: 700px;
+        left: 10%;
+        font-size: 15px;
+    }
+}
+@media (max-width:800px) {
+    .homepgcontent {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        margin-right: 50%;
+        width: 50%;
+        height: 100%;
+    }
+    .box1 {
+        font-size: 15px;
+    }
+}
+@media (max-width:430px) {
+    .homepgcontent {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        top: 0;
+        width: 80vw;
+        height: 45vh;
+    }
+    .box1 {
+        top: 700px;
+        left: 10%;
+        font-size: 15px;
+    }
+}

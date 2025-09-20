@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #F1EFEC;
+}
+.pic {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+img {
+    height: 100%;
+    width: 40%;
+    border: 0px solid black;
+    box-shadow: 0px 0px 15px 6px grey;
+    transition: all 0.3s;
+    transform: scale(0.7);
+}
+img:hover {
+    box-shadow: 0px 0px 150px 10px black;
+    transform: scale(0.9);
+}
+.pic:hover {
+    background-color: (128, 128, 128, 0);
+}
+@media (max-width: 1000px) {
+    img {
+        width: 55%;
+    }
+}
+@media (max-width: 750px) {
+    img {
+        width: 70%;
+    }
+}
+@media (max-width: 650px) {
+    img {
+        width: 100%;
+    }
+}

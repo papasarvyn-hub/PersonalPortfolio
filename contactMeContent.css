@@ -1,0 +1,151 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F1EFEC;
+}
+.mainBox {
+    display: flex;
+    position: relative;
+    box-shadow: 2px 2px 30px 5px;
+    margin: 100px;
+    height: 85vh;
+    background-color: #F1F0E4;
+}
+.textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 30px;
+    left: 50%;
+}
+.textBox h1, h4, p, .icon {
+    position: relative;
+    left: 25%;
+}
+.textBox h1 {
+    color: #3E3F29;
+    top: -1%;
+    font-size: 50px;
+}
+.textBox h4 {
+    color: #3E3F29;
+    top: -5%;
+    font-size: 21px;
+}
+.textBox p {
+    top: -5%;
+    font-size: 15px;
+    width: 40%;
+}
+.icon {
+    font-size: 17px;
+}
+.inputBox {
+    width: 50%;
+    margin: 30px;
+}
+.form {
+    margin-top: 50%;
+}
+#fname, #lname, #email, #message {
+    border: 2px solid black;
+    border-radius: 2px;
+} 
+#fname {
+    position: relative;
+    top: 40%;
+    left: 5%;
+    width: 38%;
+    height: 5%;
+}
+#lname {
+    position: relative;
+    top: 40%;
+    left: 6.5%;
+    width: 38%;
+    height: 5%;
+}
+#email {
+    position: relative;
+    top: 40%;
+    left: 5%;
+    width: 79%;
+    height: 5%;
+    margin-bottom: 5%;
+}
+#message {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    line-height: normal;
+    text-align: left;
+    top: 45%;
+    left: 5%;
+    width: 80%;
+    height: 25%;
+}
+.send {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #7D8D86;
+    border-radius: 3px;
+    font-family: roboto;
+    font-size: 25px;
+    top: 43%;
+    left: 75.5%;
+}
+@media (max-width:700px) {
+    .mainBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .textBox {
+        width: 70%;
+        height: 55%;
+    }
+    .inputBox {
+        margin-top: -20%;
+        width: 100%;
+        height: 50%;
+    }
+    .form {
+        margin-top: 25%;
+    }
+}
+@media (max-width:600px) {
+    .mainBox {
+        display: flex;
+        flex-direction: column;
+        margin: 3%;
+        height: 100vh;
+    }
+    .textBox h4 {
+        font-size: 30px;
+    }
+    .textBox h4, p, .icon {
+        font-size: 20px;
+    }
+    .textBox {
+        width: 50%;
+        height: 55%;
+    }
+    .inputBox {
+        margin-top: -20%;
+        width: 100%;
+        height: 50%;
+    }
+    .send{
+        margin-left: -10%;
+    }
+}
+@media (max-width: 376px) {
+    .form {
+        margin-top: 35%;
+    }
+    .textBox p, h1 {
+        width: 200px;
+    }
+}
